@@ -1,6 +1,6 @@
 import React from 'react';
 import { certifications } from '../../constants/data';
-import { Award, Calendar } from 'lucide-react';
+import { Award, Calendar, ExternalLink } from 'lucide-react';
 
 const Certifications: React.FC = () => {
   return (
@@ -13,9 +13,12 @@ const Certifications: React.FC = () => {
         
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {certifications.map((cert) => (
-            <div 
+            <a 
               key={cert.id}
-              className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+              href={cert.link}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="block bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
             >
               <div className="bg-blue-600 p-4 flex items-center justify-between">
                 <Award className="text-white" size={20} />
@@ -25,10 +28,13 @@ const Certifications: React.FC = () => {
                 </div>
               </div>
               <div className="p-5">
-                <h3 className="text-lg font-bold text-gray-800 mb-2">{cert.title}</h3>
+                <div className="flex items-start justify-between gap-2">
+                  <h3 className="text-lg font-bold text-gray-800 mb-2">{cert.title}</h3>
+                  <ExternalLink size={16} className="text-blue-600 flex-shrink-0 mt-1" />
+                </div>
                 <p className="text-gray-600 text-sm">{cert.issuer}</p>
               </div>
-            </div>
+            </a>
           ))}
         </div>
       </div>

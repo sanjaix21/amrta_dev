@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { projects } from '../../constants/data';
-import { Code } from 'lucide-react';
+import { Code, ExternalLink } from 'lucide-react';
 
 const Projects: React.FC = () => {
   const [activeProject, setActiveProject] = useState<number | null>(null);
@@ -23,24 +23,32 @@ const Projects: React.FC = () => {
               key={project.id}
               className="bg-white rounded-lg shadow-md overflow-hidden transform transition-all duration-300 hover:-translate-y-2 hover:shadow-xl"
             >
-              <div className="relative h-48 overflow-hidden">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
-                />
-                <div className="absolute inset-0 bg-blue-600 bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
-                  <button
-                    onClick={() => toggleProject(project.id)}
-                    className="bg-white text-blue-600 px-4 py-2 rounded-full font-medium flex items-center gap-2"
-                  >
-                    <Code size={16} />
-                    View Details
-                  </button>
+              <a href={project.link} target="_blank" rel="noopener noreferrer">
+                <div className="relative h-48 overflow-hidden">
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transition-transform duration-500 hover:scale-110"
+                  />
+                  <div className="absolute inset-0 bg-blue-600 bg-opacity-60 flex items-center justify-center opacity-0 hover:opacity-100 transition-opacity duration-300">
+                    <div className="bg-white text-blue-600 px-4 py-2 rounded-full font-medium flex items-center gap-2">
+                      <ExternalLink size={16} />
+                      View Project
+                    </div>
+                  </div>
                 </div>
-              </div>
+              </a>
               <div className="p-5">
-                <h3 className="text-xl font-bold text-gray-800 mb-2">{project.title}</h3>
+                <h3 className="text-xl font-bold text-gray-800 mb-2">
+                  <a 
+                    href={project.link} 
+                    target="_blank" 
+                    rel="noopener noreferrer"
+                    className="hover:text-blue-600 transition-colors duration-200"
+                  >
+                    {project.title}
+                  </a>
+                </h3>
                 <div className="flex flex-wrap gap-2 mb-3">
                   {project.technologies.map((tech, index) => (
                     <span 
