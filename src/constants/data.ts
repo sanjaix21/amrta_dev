@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Amrutha M.K",
+  name: "Amrutha Kesavkumar",
   title: "Data Analyst",
   location: "Punjab, India",
   email: "amruthakesavkumar@gmail.com",
@@ -65,43 +65,50 @@ export const certifications = [
     id: 1,
     title: "C++ Basics Selection and Iteration",
     issuer: "Coursera",
-    date: "2023"
+    date: "2023",
+    link: "https://coursera.org/verify/93ZBGP4FKKLK"
   },
   {
     id: 2,
     title: "Complete Machine Learning & Data Science Program",
-    issuer: "Udemy",
-    date: "2023"
+    issuer: "GeeksForGeeks",
+    date: "2023",
+    link: "hhttps://media.geeksforgeeks.org/courses/certificates/5d5a49910ccce4551db80fddf1035ece.pdf"
   },
   {
     id: 3,
     title: "Data Analysis with Tableau",
-    issuer: "Tableau",
-    date: "2022"
+    issuer: "Coursera",
+    date: "2022",
+    link: "https://coursera.org/verify/37GALG4LHLFF"
   },
   {
     id: 4,
     title: "Excel Skills for Business Advanced",
-    issuer: "Microsoft",
-    date: "2022"
+    issuer: "Coursera",
+    date: "2022",
+    link: "https://coursera.org/verify/APXZ8SN3ZFTW"
   },
   {
     id: 5,
     title: "Fundamentals of Management",
-    issuer: "LinkedIn Learning",
-    date: "2023"
+    issuer: "Coursera",
+    date: "2023",
+    link: "https://coursera.org/verify/7M7BGBS3AFYA"
   },
   {
     id: 6,
     title: "R Programming",
-    issuer: "DataCamp",
-    date: "2023"
+    issuer: "Coursera",
+    date: "2023",
+    link: "https://www.coursera.org/verify/D9396QDLM2M2"
   },
   {
     id: 7,
     title: "Supervised Machine Learning: Regression",
     issuer: "Coursera",
-    date: "2023"
+    date: "2023",
+    link: "https://coursera.org/verify/Q7NO8LZIG669"
   }
 ];
 
@@ -111,20 +118,23 @@ export const projects = [
     title: "LPU Leave Bot",
     technologies: ["Python", "Selenium"],
     description: "Automated leave application system reducing process time by 60%. Developed a user-friendly web interface built with HTML, CSS, JavaScript. Optimized workflow by eliminating redundant steps.",
-    image: "https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    link: "https://github.com/sanjaix21/lpu-leave-bot"
   },
   {
     id: 2,
     title: "Enterprise Data Intelligence System",
     technologies: ["PowerBI", "NumPy"],
     description: "Data-driven analytics system using Python, SQL, Power BI. Automated data processing revealing actionable patterns. Created real-time interactive dashboards for executive decision-making.",
-    image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    link: "https://github.com/amruthamk17/data-intelligence"
   },
   {
     id: 3,
     title: "Enterprise Data Optimization Suite",
     technologies: ["Excel", "Python"],
     description: "Business intelligence solution using Excel and Python. Automated data cleaning and reporting reducing manual effort by 60%. Developed interactive dashboards improving decision speed by 25%.",
-    image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+    image: "https://images.pexels.com/photos/590041/pexels-photo-590041.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
+    link: "https://github.com/amruthamk17/data-optimization"
   }
 ];
