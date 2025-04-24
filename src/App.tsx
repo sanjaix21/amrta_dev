@@ -12,7 +12,7 @@ import './index.css';
 
 function App() {
   useEffect(() => {
-    document.title = "Amrutha Kesavkumar | Data Analyst";
+    document.title = "Amrutha M.K | Data Analyst";
   }, []);
 
   return (
