@@ -119,7 +119,7 @@ export const projects = [
     technologies: ["Python", "Selenium"],
     description: "Automated leave application system reducing process time by 60%. Developed a user-friendly web interface built with HTML, CSS, JavaScript. Optimized workflow by eliminating redundant steps.",
     image: "https://images.pexels.com/photos/7988079/pexels-photo-7988079.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1",
-    link: "https://github.com/sanjaix21/lpu-leave-bot"
+    link: "https://github.com/amrutha-mk/lpu-leave-bot"
   },
   {
     id: 2,
