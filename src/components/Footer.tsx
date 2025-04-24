@@ -22,7 +22,7 @@ const Footer: React.FC = () => {
           </div>
           
           <div className="flex gap-4 mt-6 md:mt-0">
-            <a href="https://github.com/amruthamk17" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors">
+            <a href="https://github.com/amrutha-mk" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors">
               <Github size={20} />
             </a>
             <a href="https://www.linkedin.com/in/amruthamk17/" target="_blank" rel="noopener noreferrer" className="bg-gray-800 p-2 rounded-full hover:bg-blue-600 transition-colors">
