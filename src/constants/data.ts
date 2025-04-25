@@ -1,5 +1,5 @@
 export const personalInfo = {
-  name: "Amrutha Kesavkumar",
+  name: "Amrutha M.K",
   title: "Data Analyst",
   location: "Punjab, India",
   email: "amruthakesavkumar@gmail.com",
